@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="col-3 px-5 py-3">
+            <a class="logo" href="/">.todoFastify</a>
+            <a href="/create" class="menu">
+                <img src="../img/plus.png" alt="create">
+                <span class="menu-text align-middle">Create task</span>
+            </a>
+        </div>
+        <div class="col-9 right-part pt-3 px-5">
+            <div class="description">Developed by Artem Shevchuk</div>
+            <div class="name-chapter">Update</div>
+            <div class="row">
+                <form action="/updated" id="update-form" method="post">
+                    <div class="col-xxl">
+                        <div class="task">
+                            <div class="task-head">
+                                <input type="text" name="id" form="update-form" value="<%= note._id %>" hidden>
+                                <input type="text" name="note_name" form="update-form" value="<%= note.note_name %>" required>
+                                <div>
+                                    <button type="submit" form="update-form" value="Submit">
+                                        <img src="../img/floppy-disk.png" alt="save">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="task-body">
+                                <ul id="sub-notes-list">
+                                    <% note.sub_notes.forEach(sub_note =>{ %>
+                                        <li><input type="text" name="sub_note" form="update-form" value="<%= sub_note %>" required></li>
+                                    <%})%>
+                                </ul>
+                                <button id="add-btn">
+                                    <img src="../img/plus.png" alt="">
+                                    <span class="align-middle">Add</span>
+                                </button>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const add_btn = document.getElementById('add-btn')
+        const list = document.getElementById('sub-notes-list')
+        add_btn.addEventListener('click', () => {
+            list.innerHTML += '<li><input type="text" name="sub_note" form="update-form" placeholder="Type here..." required></li>'
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.logo{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+
+.logo:hover{
+    color: black;
+}
+
+.right-part{
+    background: #FBFBFB;
+    border-left: 1px solid #D2D2D2;
+}
+
+.name-chapter{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    padding-left: 60px;
+}
+
+.description{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-align: end;
+    padding-top: 10px;
+}
+
+.menu{
+    margin: 56px 0px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.menu-create{
+    background: #FBFE73;
+}
+
+.menu > span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.menu > img{
+    margin-right: 37px;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.task{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin: 45px 60px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.task-head{
+    box-sizing: border-box;
+    background: #FBFE73;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 13px 5px 13px;
+}
+
+.task-head > div > button > img{
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.update-note-btn > img{
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.delete-note-btn > img{
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.delete-note-btn{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.update-note-btn{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.task-head > div > button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.task-body > ul > li{
+    margin: 15px 0;
+}
+
+.task-body > button > img{
+    width: 20px;
+    height: 20px;
+}
+
+.task-body > button{
+    margin-left: 10px;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    background: #FBFE73;
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+    color: black;
+}

@@ -78,6 +78,9 @@ typings/
 # Next.js build output
 .next
 
+#WebShtorm
+.idea
+
 # Nuxt.js build / generate output
 .nuxt
 dist
